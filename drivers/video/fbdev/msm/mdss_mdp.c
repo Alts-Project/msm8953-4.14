@@ -3064,8 +3064,7 @@ static int mdss_mdp_probe(struct platform_device *pdev)
 		(int) (unsigned long) mdata->vbif_io.base,
 		mdata->vbif_io.len);
 
-	rc = msm_mdss_ioremap_byname(pdev, &mdata->vbif_nrt_io,
-				     "vbif_nrt_phys");
+	rc = msm_mdss_ioremap_byname(pdev, &mdata->vbif_nrt_io, "vbif_nrt_phys");
 	if (rc)
 		pr_debug("unable to map MDSS VBIF non-realtime base\n");
 	else
@@ -3290,8 +3289,13 @@ probe_done:
 	return rc;
 }
 
+<<<<<<< HEAD
 static void mdss_mdp_parse_dt_regs_array(const u32 *arr,
 	struct mdss_io_data *io, struct mdss_hw_settings *hws, int count)
+=======
+static void mdss_mdp_parse_dt_regs_array(const u32 *arr, struct mdss_io_data *io,
+	struct mdss_hw_settings *hws, int count)
+>>>>>>> 47979c8d1199b (msm: mdss: import DSI pll clock driver)
 {
 	u32 len, reg;
 	int i;

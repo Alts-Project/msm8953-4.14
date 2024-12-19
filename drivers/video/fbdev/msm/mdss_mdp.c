@@ -3289,13 +3289,8 @@ probe_done:
 	return rc;
 }
 
-<<<<<<< HEAD
 static void mdss_mdp_parse_dt_regs_array(const u32 *arr,
 	struct mdss_io_data *io, struct mdss_hw_settings *hws, int count)
-=======
-static void mdss_mdp_parse_dt_regs_array(const u32 *arr, struct mdss_io_data *io,
-	struct mdss_hw_settings *hws, int count)
->>>>>>> 47979c8d1199b (msm: mdss: import DSI pll clock driver)
 {
 	u32 len, reg;
 	int i;
